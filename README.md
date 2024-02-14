@@ -3,10 +3,8 @@ Psychological study examining humans' preference for copying members of the same
 
 Montrey, M., & Shultz, T. R. (2022). Copy the In-group: Group Membership Trumps Perceived Reliability, Warmth, and Competence in a Social-Learning Task. *Psychological Science, 33*(1), 165-174. https://doi.org/10.1177/09567976211032224
 
-In accordance with open data practices, all human data and code used for statistical analysis have been made publicly available via OSF:
+In accordance with open data practices, all human data and code used for statistical analysis have been made publicly available via OSF and GitHub:
 https://doi.org/10.17605/OSF.IO/Z6D7J
-
-These can also be found in the following GitHub repository:
 https://github.com/MarcelMontrey/CopyTheIngroupData
 
 # Abstract
