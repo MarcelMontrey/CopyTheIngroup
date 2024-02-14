@@ -1,0 +1,256 @@
+body {
+	font-family: arial;
+	font-size: 16px;
+	user-select: none;
+	user-drag: none;
+}
+
+div.page {
+	display: none;
+	width: 640px;
+	margin: auto;
+	padding: 0px;
+	background-color: #fafafa;
+	border: 1px solid #ccc;
+	animation: fadein 1s;
+}
+
+div.wide {
+	width: 960px;
+}
+
+div.title {
+	text-align: center;
+	background-color: #505050;
+	color: #fff;
+	padding: 5px;
+	font-size: 16px;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+div.content {
+	margin: 10px;
+	padding: 0px;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+div.content p {
+	margin: 10px;
+}
+
+div.content ul li {
+	padding: 2px;
+}
+
+div.content select {
+	margin: 2px 10px 10px 10px;
+	padding: 2px;
+	min-width: 100px;
+	width: 75%;
+	background-color: #fafafa;
+	border-color: #ccc;
+	font-size:16px;
+}
+
+div.content img {
+	width: 36px;
+	height: 36px;
+}
+
+div.content img.machine {
+	width: 72px;
+	height: 72px;
+}
+
+div.check {
+	margin: 10px;
+	text-align: right;
+}
+
+button.choose {
+	width: 160px;
+	height: 85px;
+}
+
+div.guess button {
+	padding:10px 30px;
+}
+
+div.game-row, div.outcome-row {
+	width: 100%;
+	display: flex;
+}
+
+div.game-row:first-of-type, div.outcome-row:first-of-type {
+	margin-top: -1px;
+}
+
+div.game-left, div.game-center, div.game-right {
+	padding: 10px;
+	border-top: 1px solid #ccc;
+}
+
+div.game-center, div.game-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid #ccc;
+}
+
+div.game-left {
+	width: 30%;
+	flex-grow: 1;
+}
+
+div.game-center {
+	width: 35%;
+}
+
+div.game-right {
+	width: 35%;
+}
+
+div.machine-row {
+	min-height: 92px;
+}
+
+div.outcome-left, div.outcome-center, div.outcome-right {
+	border-top: 1px solid #ccc;
+}
+
+div.outcome-center, div.outcome-right {
+	border-left: 1px solid #ccc;
+}
+
+div.outcome-left {
+	width: 25%;
+	flex-grow: 1;
+}
+
+div.outcome-center {
+	width: 50%;
+}
+
+div.outcome-right {
+	width: 25%;
+}
+
+div.light {
+	background-color: #fafafa;
+}
+
+button, input, select, label {
+	cursor: pointer;
+	font-size:16px;
+}
+
+div.done {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+div.back, div.next {
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 50%;
+}
+
+div.back {
+	text-align: left;
+}
+
+div.next {
+	text-align: right;
+}
+
+div.done button, div.back button, div.next button {
+	padding:10px 30px;
+}
+
+div.back button {
+	margin-left: 10px;
+}
+
+div.next button {
+	margin-right: 10px;
+}
+
+span.red {
+	color: #a00;
+	font-weight: bold;
+}
+
+span.blue {
+	color: #00a;
+	font-weight: bold;
+}
+
+.fade {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.fastfade {
+	transition: opacity 0.5s;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+div.loader {
+	margin:auto;
+	border: 16px solid #f1f1f1;
+	border-top: 16px solid #505050;
+	border-bottom: 16px solid #505050;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	animation: spin 1s linear infinite;
+}
+
+#assign-loader {
+	margin: 12px auto;
+	display: inline-block;
+}
+
+#assign-result {
+	margin: 12px auto;
+	display: none;
+}
+
+div.code button {
+	margin-bottom: 10px;
+	padding: 5px 10px;
+}
+
+div.code input {
+	width: 125px;
+	padding: 5px 10px;
+	font-size: 16px;
+	text-align: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
